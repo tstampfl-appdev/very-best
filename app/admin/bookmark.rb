@@ -16,4 +16,10 @@ ActiveAdmin.register Bookmark do
 # end
 
 
+
+belongs_to :user
+belongs_to :dish
+belongs_to :venue
+
+
 end

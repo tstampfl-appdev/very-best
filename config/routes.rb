@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => "venues#index"
+  root :to => "dishes#index"
 
   # Routes for the Bookmark resource:
   # CREATE
@@ -85,7 +85,7 @@ Rails.application.routes.draw do
   # DELETE
   get "/delete_venue/:id", :controller => "venues", :action => "destroy"
   #------------------------------
-
+  
   devise_for :users
   # Routes for the User resource:
   # READ
